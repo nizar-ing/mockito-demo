@@ -5,11 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SomeBusinessImplTest {
+public class SomeBusinessImplStubTest {
     @Test
     void findTheGreatestFromAllData() {
         var businessImpl = new SomeBusinessImpl(new DataServiceStub());
-        assertEquals(businessImpl.retrieveTheGreatestFromAllData(), 25);
+        assertEquals(25, businessImpl.retrieveTheGreatestFromAllData());
     }
 }
 
